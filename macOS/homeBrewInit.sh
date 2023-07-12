@@ -24,3 +24,5 @@ echo "Installing applications..."
 brew install --cask git-credential-manager-core google-chrome iterm2 rectangle spotify visual-studio-code
 
 echo "Installation completed successfully!"
+
+# Add here zshrc and ohmyzsh 
