@@ -10,31 +10,24 @@ echo "Updating Homebrew..."
 brew update
 echo "Homebrew update completed!"
 
-# Tap repositories
-echo "Tapping necessary repositories..."
-brew tap homebrew/cask-fonts
-brew tap microsoft/git
-echo "Repositories tapped!"
-
 # Install core packages
 echo "Installing core packages..."
-brew install git azure-cli python@3.10 awscli bash coreutils \
-             gnutls cask curl docker gnu-sed grep helm htop jq kafka \
-             kubernetes-cli kubectx minikube mysql-client pipenv pyenv \
-             pyenv-virtualenv terraform-docs terraform-ls tfenv tflint tig \
-             tmux tree vault watch wget yq clipy rectangle
+brew install git python@3.10 bash \
+             curl grep htop \
+             pipenv pyenv \
+             tree watch wget yq clipy rectangle noir onedrive 
 echo "Core packages installed!"
-
-# Install fonts
-echo "Installing fonts..."
-brew install --cask font-hack-nerd-font font-meslo-for-powerline \
-                   font-meslo-lg-nerd-font
-echo "Fonts installed!"
 
 # Install applications
 echo "Installing additional applications..."
-brew install --cask git-credential-manager-core google-chrome iterm2 \
-                    rectangle spotify visual-studio-code
+brew install --cask google-chrome iterm2 \
+                    rectangle spotify alt-tab appcleaner bartender basecamp \
+                    betterdisplay binance cheatsheet coconutbattery discord \
+                    dropzone grammarly-desktop logi-options-plus microsoft-excel \
+                    microsoft-outlook microsoft-powerpoint microsoft-word notion \
+                    pycharm raycast rstudio visual-studio-code \
+                    safeincloud-password-manager scroll-reverser the-unarchiver \
+                    whatsapp xmind zoom
 echo "Additional applications installed!"
 
 echo "Installation completed successfully!"
